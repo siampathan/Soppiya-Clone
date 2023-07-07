@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+.header {
+  position: sticky;
+  top: 0;
+  height: 76px;
+  padding: 0 65px;
+  background-color: #fff;
+  border: 1px solid #f5f8fe;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1199px) {
+    padding: 0 90px;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 0 10rem;
+  }
+
+  .header-logo {
+    width: 160px;
+    height: 36px;
+
+    @media (max-width: 1250px) {
+      width: 123px;
+      height: 32px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .hamburger {
+    display: none;
+
+    @media (max-width: 1023px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: coral;
+    }
+  }
+
+  .header-content {
+    padding-right: 30px;
+
+    @media (max-width: 1023px) {
+      display: none;
+    }
+    ul {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+
+      li {
+        list-style: none;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        cursor: pointer;
+      }
+      .get-start {
+        height: 38px;
+        width: 122px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        border: 1px solid #485460;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #000000;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
